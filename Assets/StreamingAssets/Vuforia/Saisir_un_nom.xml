@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="MageRed" size="0.120000 0.213333" />
+    <ImageTarget name="MageBlue" size="0.120000 0.213333" />
+    <ImageTarget name="KnightRed" size="0.120000 0.213333" />
+    <ImageTarget name="KnightBlue" size="0.120000 0.213333" />
+    <ImageTarget name="TankRed" size="0.120000 0.213333" />
+    <ImageTarget name="TankBlue" size="0.120000 0.213333" />
+  </Tracking>
+</QCARConfig>
