@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 917562070668340348}
   - component: {fileID: 1292074021164547413}
   - component: {fileID: 3261338470917435095}
-  - component: {fileID: 8583264692883085431}
+  - component: {fileID: 3102665213195736322}
   m_Layer: 6
   m_Name: KnightRedImage
   m_TagString: Type 2
@@ -61,7 +61,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 8583264692883085431}
+  mPreview: {fileID: 3102665213195736322}
 --- !u!114 &3261338470917435095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8583264692883085431
+--- !u!114 &3102665213195736322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,6 +125,37 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1292074021164547413}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &5601089559682223834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350284861826266597}
+  m_Layer: 6
+  m_Name: VFX_SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &350284861826266597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601089559682223834}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.048, y: 1.676, z: 1.218}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2564906584101377434}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6268045733944327296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,7 +186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
       propertyPath: m_LocalPosition.z
@@ -471,7 +502,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -764219335168546534, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 350284861826266597}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
       insertIndex: -1
@@ -483,6 +517,11 @@ PrefabInstance:
 --- !u!95 &546632974647935249 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
+  m_PrefabInstance: {fileID: 6268045733944327296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2564906584101377434 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -764219335168546534, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
   m_PrefabInstance: {fileID: 6268045733944327296}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &5869926579976149867 stripped
@@ -510,6 +549,9 @@ MonoBehaviour:
   unitClass: 1
   animator: {fileID: 546632974647935249}
   attackSound: {fileID: 8300000, guid: e841b36ad45937e4ba7f14235d22d051, type: 3}
+  attackParticlePrefab: {fileID: 8307060409358143758, guid: 8f767d0b23c8e3b4cb2ead5380b1074d, type: 3}
+  particleSpawnPoint: {fileID: 350284861826266597}
+  particleLifetime: 2
 --- !u!82 &3251374256328075556
 AudioSource:
   m_ObjectHideFlags: 0
