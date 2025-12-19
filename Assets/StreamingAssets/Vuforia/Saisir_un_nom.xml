@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="HealthBuff" size="0.090000 0.160000" />
+    <ImageTarget name="AttackBuff" size="0.090000 0.160000" />
     <ImageTarget name="TankBlue" size="0.090000 0.168308" />
     <ImageTarget name="MageRed" size="0.090000 0.160000" />
     <ImageTarget name="MageBlue" size="0.090000 0.160000" />

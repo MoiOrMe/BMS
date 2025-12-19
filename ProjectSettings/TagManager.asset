@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Type 1
   - Type 2
+  - Type 3
   layers:
   - Default
   - TransparentFX
