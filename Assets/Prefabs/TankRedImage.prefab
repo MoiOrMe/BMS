@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 1229612649942623600}
   - component: {fileID: 5297534933543841914}
   - component: {fileID: 5307822975130567487}
-  - component: {fileID: 6829376365093446556}
-  - component: {fileID: 6203957310824827594}
+  - component: {fileID: 2087149191336151179}
+  - component: {fileID: 4927182006514448120}
   m_Layer: 6
   m_Name: TankRedImage
-  m_TagString: Type 1
+  m_TagString: Type 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 6203957310824827594}
+  mPreview: {fileID: 4927182006514448120}
 --- !u!114 &5307822975130567487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6829376365093446556
+--- !u!114 &2087149191336151179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,12 +116,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7332673361209645636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c8094e81b15fe45a1d33a84de44870, type: 3}
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delta: {x: 0, y: 0, z: 0}
-  goIn: 0
---- !u!114 &6203957310824827594
+  mObserverBehaviour: {fileID: 5297534933543841914}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: TankRed
+  mDatasetName: Vuforia/Saisir_un_nom.xml
+  mCastedBehaviour: {fileID: 5297534933543841914}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &4927182006514448120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -550,14 +555,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dcc349434ae5b784f931565c5276789e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5127401264571014251}
+      addedObject: {fileID: 4826350395982380440}
   m_SourcePrefab: {fileID: 100100000, guid: dcc349434ae5b784f931565c5276789e, type: 3}
 --- !u!1 &3466597924218213607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dcc349434ae5b784f931565c5276789e, type: 3}
   m_PrefabInstance: {fileID: 4385025682496760246}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5127401264571014251
+--- !u!114 &4826350395982380440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -566,9 +571,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3466597924218213607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c4278c83730027419402bb696c92384, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fd223b294a0e834b9ab667dab062cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitClass: 0
   animator: {fileID: 7903861368979166247}
 --- !u!4 &4273921395329748573 stripped
 Transform:

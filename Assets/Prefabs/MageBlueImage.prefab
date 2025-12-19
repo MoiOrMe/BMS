@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8774015851073295269}
   - component: {fileID: 1611946204024767056}
   - component: {fileID: 5966742443657499300}
-  - component: {fileID: 5478933694083232761}
-  - component: {fileID: 2618579942966906889}
+  - component: {fileID: 7341133692634177879}
+  - component: {fileID: 2261674188021110666}
   m_Layer: 7
   m_Name: MageBlueImage
   m_TagString: Type 1
@@ -62,7 +62,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2618579942966906889}
+  mPreview: {fileID: 2261674188021110666}
 --- !u!114 &5966742443657499300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5478933694083232761
+--- !u!114 &7341133692634177879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,12 +116,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7115568879636746331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c8094e81b15fe45a1d33a84de44870, type: 3}
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delta: {x: 0, y: 0, z: 0}
-  goIn: 0
---- !u!114 &2618579942966906889
+  mObserverBehaviour: {fileID: 1611946204024767056}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: MageBlue
+  mDatasetName: Vuforia/Saisir_un_nom.xml
+  mCastedBehaviour: {fileID: 1611946204024767056}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &2261674188021110666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -498,7 +503,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f51db7938a7de2f4ba322bdcbf903fc3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3500219693665773364}
+      addedObject: {fileID: 8158507368071448746}
   m_SourcePrefab: {fileID: 100100000, guid: f51db7938a7de2f4ba322bdcbf903fc3, type: 3}
 --- !u!95 &4113584667786593851 stripped
 Animator:
@@ -510,7 +515,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f51db7938a7de2f4ba322bdcbf903fc3, type: 3}
   m_PrefabInstance: {fileID: 7529164102198459306}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3500219693665773364
+--- !u!114 &8158507368071448746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -519,9 +524,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7259133056653739771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e93d5489360a8f248a8fb8b0786fea39, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fd223b294a0e834b9ab667dab062cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitClass: 2
   animator: {fileID: 4113584667786593851}
 --- !u!4 &8067723337160465473 stripped
 Transform:

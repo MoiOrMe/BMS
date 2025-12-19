@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 917562070668340348}
   - component: {fileID: 1292074021164547413}
   - component: {fileID: 3261338470917435095}
-  - component: {fileID: 4082493629239149383}
-  - component: {fileID: 5887118103284604302}
+  - component: {fileID: 7264038969166241805}
+  - component: {fileID: 7536073432814190333}
   m_Layer: 6
   m_Name: KnightRedImage
-  m_TagString: Type 1
+  m_TagString: Type 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 5887118103284604302}
+  mPreview: {fileID: 7536073432814190333}
 --- !u!114 &3261338470917435095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4082493629239149383
+--- !u!114 &7264038969166241805
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,12 +116,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 3415948321169349669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c8094e81b15fe45a1d33a84de44870, type: 3}
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delta: {x: 0, y: 0, z: 0}
-  goIn: 0
---- !u!114 &5887118103284604302
+  mObserverBehaviour: {fileID: 1292074021164547413}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: KnightRed
+  mDatasetName: Vuforia/Saisir_un_nom.xml
+  mCastedBehaviour: {fileID: 1292074021164547413}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &7536073432814190333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -490,7 +495,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 846080510972306489}
+      addedObject: {fileID: 2826649884792507664}
   m_SourcePrefab: {fileID: 100100000, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
 --- !u!95 &546632974647935249 stripped
 Animator:
@@ -507,7 +512,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ab475a91d1fdffe4a9693881daed6657, type: 3}
   m_PrefabInstance: {fileID: 6268045733944327296}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &846080510972306489
+--- !u!114 &2826649884792507664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -516,7 +521,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6502630184480031185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecd0b47da2bd41e4a88af09b1409f13d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fd223b294a0e834b9ab667dab062cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitClass: 1
   animator: {fileID: 546632974647935249}
