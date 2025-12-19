@@ -17,6 +17,12 @@ public class BattleCharacterController : MonoBehaviour
     public AudioClip attackSound;
     private AudioSource audioSource;
 
+    [Header("VFX (Effets Spéciaux)")]
+    public GameObject attackParticlePrefab;
+    public Transform particleSpawnPoint;
+    public float particleLifetime = 2.0f;
+    private Vector3 lastKnownEnemyPosition;
+
     private readonly int IsAttackingHash = Animator.StringToHash("IsAttacking");
     private Quaternion initialRotation;
 
@@ -45,9 +51,47 @@ public class BattleCharacterController : MonoBehaviour
             if (isClose && !isAlreadyAttacking)
             {
                 PlayAttackSound();
+                SpawnParticleEffect();
             }
 
             animator.SetBool(IsAttackingHash, isClose);
+        }
+    }
+
+    private void SpawnParticleEffect()
+    {
+        if (attackParticlePrefab != null)
+        {
+            Vector3 spawnPos;
+            Quaternion spawnRot;
+
+            if (particleSpawnPoint != null)
+            {
+                spawnPos = particleSpawnPoint.position;
+                spawnRot = particleSpawnPoint.rotation;
+            }
+            else
+            {
+                spawnPos = transform.position + Vector3.up * 0.5f;
+                spawnRot = transform.rotation;
+            }
+
+            GameObject vfx = Instantiate(attackParticlePrefab, spawnPos, spawnRot);
+
+            if (unitClass == UnitClass.Mage)
+            {
+                ProjectileMover mover = vfx.GetComponent<ProjectileMover>();
+
+                if (mover != null)
+                {
+                    mover.SetTarget(lastKnownEnemyPosition + Vector3.up * 0.5f);
+                }
+                else
+                {
+                    Debug.LogWarning("Le Mage attaque, mais son prefab de particule n'a pas le script 'ProjectileMover' !");
+                }
+            }
+            Destroy(vfx, particleLifetime);
         }
     }
 
@@ -61,6 +105,8 @@ public class BattleCharacterController : MonoBehaviour
 
     public void FaceEnemy(Vector3 targetPosition)
     {
+        lastKnownEnemyPosition = targetPosition;
+
         Vector3 direction = targetPosition - transform.position;
         Vector3 projectedDirection = Vector3.ProjectOnPlane(direction, transform.up);
 

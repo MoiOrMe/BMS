@@ -457,34 +457,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3102665213195736322, guid: 73c49426791230543969eba95a0974d1, type: 3}
+      propertyPath: mHiddenRoot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102665213195736322, guid: 73c49426791230543969eba95a0974d1, type: 3}
+      propertyPath: mMeshFilter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102665213195736322, guid: 73c49426791230543969eba95a0974d1, type: 3}
+      propertyPath: mMeshRenderer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3415948321169349669, guid: 73c49426791230543969eba95a0974d1, type: 3}
       propertyPath: m_Name
       value: KnightRedImage
       objectReference: {fileID: 0}
-    - target: {fileID: 5869926579976149867, guid: 73c49426791230543969eba95a0974d1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 8583264692883085431, guid: 73c49426791230543969eba95a0974d1, type: 3}
-      propertyPath: mHiddenRoot
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8583264692883085431, guid: 73c49426791230543969eba95a0974d1, type: 3}
-      propertyPath: mMeshFilter
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8583264692883085431, guid: 73c49426791230543969eba95a0974d1, type: 3}
-      propertyPath: mMeshRenderer
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8583264692883085431, guid: 73c49426791230543969eba95a0974d1, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3415948321169349669, guid: 73c49426791230543969eba95a0974d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 274658059}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73c49426791230543969eba95a0974d1, type: 3}
 --- !u!1 &217969986
 GameObject:
@@ -699,41 +691,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244773047}
   m_CullTransparentMesh: 1
---- !u!1 &274658053 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3415948321169349669, guid: 73c49426791230543969eba95a0974d1, type: 3}
-  m_PrefabInstance: {fileID: 134619318}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &274658056 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1292074021164547413, guid: 73c49426791230543969eba95a0974d1, type: 3}
-  m_PrefabInstance: {fileID: 134619318}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274658053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &274658059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274658053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 274658056}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: KnightRed
-  mDatasetName: Vuforia/Saisir_un_nom.xml
-  mCastedBehaviour: {fileID: 274658056}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1001 &331846336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -786,30 +743,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5972396982229172141, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 7721931405349334489, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
+    - target: {fileID: 5795109793141546661, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
       propertyPath: mHiddenRoot
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7721931405349334489, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
+    - target: {fileID: 5795109793141546661, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
       propertyPath: mMeshFilter
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7721931405349334489, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
+    - target: {fileID: 5795109793141546661, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7721931405349334489, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 397548332008738151, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 434488904}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
 --- !u!1 &356423890
 GameObject:
@@ -1073,41 +1022,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!1 &434488898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 397548332008738151, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
-  m_PrefabInstance: {fileID: 331846336}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &434488901 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4821002186782972924, guid: 5aa91139aacd6724aa6b5292bcf46ebb, type: 3}
-  m_PrefabInstance: {fileID: 331846336}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434488898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &434488904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434488898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 434488901}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: MageRed
-  mDatasetName: Vuforia/Saisir_un_nom.xml
-  mCastedBehaviour: {fileID: 434488901}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &584314065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,34 +1677,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1556428426127650559, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
+    - target: {fileID: 4601698380707199017, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
       propertyPath: mHiddenRoot
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1556428426127650559, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
+    - target: {fileID: 4601698380707199017, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
       propertyPath: mMeshFilter
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1556428426127650559, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
+    - target: {fileID: 4601698380707199017, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
       propertyPath: mMeshRenderer
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4273921395329748573, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 7332673361209645636, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
       propertyPath: m_Name
       value: TankRedImage
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1556428426127650559, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7332673361209645636, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1414548179}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
 --- !u!1 &878701430
 GameObject:
@@ -2195,19 +2101,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2961434663167501292, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 6387205601744539038, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
+    - target: {fileID: 1492061524332368513, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
       propertyPath: mHiddenRoot
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6387205601744539038, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
+    - target: {fileID: 1492061524332368513, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
       propertyPath: mMeshFilter
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6387205601744539038, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
+    - target: {fileID: 1492061524332368513, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
@@ -2255,14 +2157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6387205601744539038, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7023029929816220496, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1827475766}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
 --- !u!1 &1144537818
 GameObject:
@@ -3194,41 +3092,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378251829}
   m_CullTransparentMesh: 1
---- !u!1 &1414548173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7332673361209645636, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
-  m_PrefabInstance: {fileID: 833250571}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1414548176 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5297534933543841914, guid: 96cda4963be5aa84f8f1645e35b908a7, type: 3}
-  m_PrefabInstance: {fileID: 833250571}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414548173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1414548179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414548173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1414548176}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: TankRed
-  mDatasetName: Vuforia/Saisir_un_nom.xml
-  mCastedBehaviour: {fileID: 1414548176}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &1436143428
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,15 +3519,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1329861064615298493, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
+    - target: {fileID: 2055282064963178167, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
       propertyPath: mHiddenRoot
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1329861064615298493, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
+    - target: {fileID: 2055282064963178167, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
       propertyPath: mMeshFilter
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1329861064615298493, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
+    - target: {fileID: 2055282064963178167, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
@@ -3712,18 +3575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7098649424212179762, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1329861064615298493, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3487141847754348677, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1968413801}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
 --- !u!1 &1552942185 stripped
 GameObject:
@@ -4180,25 +4035,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6997940595510991694, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
+    - target: {fileID: 94490159700127062, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
       propertyPath: mHiddenRoot
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6997940595510991694, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
+    - target: {fileID: 94490159700127062, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
       propertyPath: mMeshFilter
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6997940595510991694, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
+    - target: {fileID: 94490159700127062, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7115568879636746331, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
       propertyPath: m_Name
       value: MageBlueImage
-      objectReference: {fileID: 0}
-    - target: {fileID: 8067723337160465473, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8774015851073295269, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4240,85 +4091,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6997940595510991694, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7115568879636746331, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1792690836}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
---- !u!1 &1792690830 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7115568879636746331, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
-  m_PrefabInstance: {fileID: 1785103052}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1792690833 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1611946204024767056, guid: 1e993e3387d7c7545ade6530711cf411, type: 3}
-  m_PrefabInstance: {fileID: 1785103052}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792690830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1792690836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792690830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1792690833}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: MageBlue
-  mDatasetName: Vuforia/Saisir_un_nom.xml
-  mCastedBehaviour: {fileID: 1792690833}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!1 &1827475760 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7023029929816220496, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
-  m_PrefabInstance: {fileID: 1118175201}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1827475763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3718346658335680213, guid: c42635ddc79f0f948a0bd763af0a8890, type: 3}
-  m_PrefabInstance: {fileID: 1118175201}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827475760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1827475766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827475760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1827475763}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: KnightBlue
-  mDatasetName: Vuforia/Saisir_un_nom.xml
-  mCastedBehaviour: {fileID: 1827475763}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1001 &1834693863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4409,41 +4186,6 @@ MonoBehaviour:
   mTargetName: AttackBuff
   mDatasetName: Vuforia/Saisir_un_nom.xml
   mCastedBehaviour: {fileID: 1840148195}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!1 &1968413795 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3487141847754348677, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
-  m_PrefabInstance: {fileID: 1532114784}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1968413798 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1559517305797390011, guid: 2aa1e6bfe5de56541a24e716810fa605, type: 3}
-  m_PrefabInstance: {fileID: 1532114784}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968413795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1968413801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968413795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1968413798}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: TankBlue
-  mDatasetName: Vuforia/Saisir_un_nom.xml
-  mCastedBehaviour: {fileID: 1968413798}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
 --- !u!1 &1974061346
