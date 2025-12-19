@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1449389080680872687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8318470236236640062}
+  m_Layer: 6
+  m_Name: VFX_SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8318470236236640062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449389080680872687}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.494, y: 1.446, z: -0.029}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8067723337160465473}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7115568879636746331
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +42,7 @@ GameObject:
   - component: {fileID: 8774015851073295269}
   - component: {fileID: 1611946204024767056}
   - component: {fileID: 5966742443657499300}
-  - component: {fileID: 6997940595510991694}
+  - component: {fileID: 94490159700127062}
   m_Layer: 7
   m_Name: MageBlueImage
   m_TagString: Type 1
@@ -61,7 +92,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 6997940595510991694}
+  mPreview: {fileID: 94490159700127062}
 --- !u!114 &5966742443657499300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +137,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6997940595510991694
+--- !u!114 &94490159700127062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f51db7938a7de2f4ba322bdcbf903fc3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f51db7938a7de2f4ba322bdcbf903fc3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -479,7 +510,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f51db7938a7de2f4ba322bdcbf903fc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8318470236236640062}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f51db7938a7de2f4ba322bdcbf903fc3, type: 3}
       insertIndex: -1
@@ -513,6 +547,9 @@ MonoBehaviour:
   unitClass: 2
   animator: {fileID: 4113584667786593851}
   attackSound: {fileID: 8300000, guid: a652ccbafb3f23a409bbcbe4a9655e8a, type: 3}
+  attackParticlePrefab: {fileID: 3226506910322988314, guid: eccbc655050af0b4f81d8db39f84a58e, type: 3}
+  particleSpawnPoint: {fileID: 8318470236236640062}
+  particleLifetime: 2
 --- !u!82 &907477355736087005
 AudioSource:
   m_ObjectHideFlags: 0

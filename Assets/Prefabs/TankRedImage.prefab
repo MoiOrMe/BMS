@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4147650779383480859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5054009910268694625}
+  m_Layer: 6
+  m_Name: VFX_SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5054009910268694625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147650779383480859}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4273921395329748573}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!1 &7332673361209645636
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +42,7 @@ GameObject:
   - component: {fileID: 1229612649942623600}
   - component: {fileID: 5297534933543841914}
   - component: {fileID: 5307822975130567487}
-  - component: {fileID: 1556428426127650559}
+  - component: {fileID: 4601698380707199017}
   m_Layer: 6
   m_Name: TankRedImage
   m_TagString: Type 2
@@ -61,7 +92,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1556428426127650559}
+  mPreview: {fileID: 4601698380707199017}
 --- !u!114 &5307822975130567487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +137,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1556428426127650559
+--- !u!114 &4601698380707199017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcc349434ae5b784f931565c5276789e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcc349434ae5b784f931565c5276789e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -531,7 +562,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcc349434ae5b784f931565c5276789e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5054009910268694625}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dcc349434ae5b784f931565c5276789e, type: 3}
       insertIndex: -1
@@ -560,6 +594,9 @@ MonoBehaviour:
   unitClass: 0
   animator: {fileID: 7903861368979166247}
   attackSound: {fileID: 8300000, guid: e188dfcfadafbf84aa22b0c22a8c913f, type: 3}
+  attackParticlePrefab: {fileID: 6547965365630005983, guid: a5f2e1a561eda814091741bf454dd28c, type: 3}
+  particleSpawnPoint: {fileID: 5054009910268694625}
+  particleLifetime: 2
 --- !u!82 &5936789996153064493
 AudioSource:
   m_ObjectHideFlags: 0

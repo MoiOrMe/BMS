@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3754090343513913688}
   - component: {fileID: 1559517305797390011}
   - component: {fileID: 7272772256215740969}
-  - component: {fileID: 1329861064615298493}
+  - component: {fileID: 2055282064963178167}
   m_Layer: 7
   m_Name: TankBlueImage
   m_TagString: Type 1
@@ -61,7 +61,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1329861064615298493}
+  mPreview: {fileID: 2055282064963178167}
 --- !u!114 &7272772256215740969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1329861064615298493
+--- !u!114 &2055282064963178167
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,6 +125,37 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1559517305797390011}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &4784577451506244152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713987246750126889}
+  m_Layer: 6
+  m_Name: VFX_SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1713987246750126889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784577451506244152}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7098649424212179762}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!1001 &7280562993720450265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,7 +186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcc349434ae5b784f931565c5276789e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcc349434ae5b784f931565c5276789e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -531,7 +562,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcc349434ae5b784f931565c5276789e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1713987246750126889}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dcc349434ae5b784f931565c5276789e, type: 3}
       insertIndex: -1
@@ -570,6 +604,9 @@ MonoBehaviour:
   unitClass: 0
   animator: {fileID: 3774954225231946056}
   attackSound: {fileID: 8300000, guid: e188dfcfadafbf84aa22b0c22a8c913f, type: 3}
+  attackParticlePrefab: {fileID: 6547965365630005983, guid: a5f2e1a561eda814091741bf454dd28c, type: 3}
+  particleSpawnPoint: {fileID: 1713987246750126889}
+  particleLifetime: 2
 --- !u!82 &1561768002352135745
 AudioSource:
   m_ObjectHideFlags: 0
